@@ -2,7 +2,6 @@
 
 import random as rand
 import time
-
 import pygame
 
 
@@ -1582,23 +1581,6 @@ def help_box_check():
             drawing_board = True
             keyboard['>']["x"] = range(305, 356)
             screen.blit(bgImage, (0, 0))
-
-
-# # noinspection PyTypeChecker
-# def check_answer():
-#     test_counter = 0
-#     for letter in guess_array[current_row]:
-#         bg_array[current_row][test_counter] = gray
-#         keyboard[letter]["color"] = gray
-#         if letter in answer:
-#             if keyboard[letter]["color"] != green:
-#                 keyboard[letter]["color"] = yellow
-#             bg_array[current_row][test_counter] = yellow
-#         if answer[test_counter] == guess_array[current_row][test_counter]:
-#             if letter in answer:
-#                 keyboard[letter]["color"] = green
-#             bg_array[current_row][test_counter] = green
-#         test_counter += 1
 
 
 def check_answer():
